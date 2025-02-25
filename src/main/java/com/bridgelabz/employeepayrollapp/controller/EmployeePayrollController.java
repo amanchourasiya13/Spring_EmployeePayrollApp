@@ -6,17 +6,18 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/employees")
 public class EmployeePayrollController {
     @GetMapping("/test")
-    public String testAPI() {
+    public String testAPI()
+    {
         return "Employee Payroll REST API is working!";
     }
 
     @GetMapping
-    public String getEmployye(){
+    public String getEmployee(){
         return "Fetching employee";
     }
 
     @GetMapping("/all")
-    public String getAllEmployye(){
+    public String getAllEmployee(){
         return "Fetching all employees";
     }
 
