@@ -25,4 +25,16 @@ public class EmployeePayrollData {
     public double getSalary() {
         return salary;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
