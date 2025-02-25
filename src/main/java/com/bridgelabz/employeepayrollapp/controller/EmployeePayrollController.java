@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/employees")
 
-class EmployeePayrollController {
+public class EmployeePayrollController {
     @Autowired
     private IEmployeePayrollService employeePayrollService;
 
