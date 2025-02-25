@@ -20,7 +20,7 @@ class EmployeePayrollController {
     private IEmployeePayrollService employeePayrollService;
 
     @RequestMapping(value={"","/","/get"})
-   public  ResponseEntity<ResponseDTO>getEmployeePayrollData(){
+    public  ResponseEntity<ResponseDTO>getEmployeePayrollData(){
         List<EmployeePayrollData> emptDataList=null;
         emptDataList=employeePayrollService.getEmployeePayrollData();
         ResponseDTO responseDto=new ResponseDTO("Get call Successful",emptDataList);
