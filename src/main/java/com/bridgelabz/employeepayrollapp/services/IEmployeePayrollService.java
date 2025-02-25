@@ -2,7 +2,7 @@ package com.bridgelabz.employeepayrollapp.services;
 
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
-import org.hibernate.mapping.List;
+import java.util.List;
 
 public interface IEmployeePayrollService {
     List<EmployeePayrollData> getEmployeePayrollData();
