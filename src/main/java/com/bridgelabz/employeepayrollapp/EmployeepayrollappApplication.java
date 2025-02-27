@@ -1,15 +1,9 @@
 package com.bridgelabz.employeepayrollapp;
 
-
+import org.springframework.context.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 
 @SpringBootApplication
 @Slf4j
@@ -17,12 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EmployeepayrollappApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmployeepayrollappApplication.class, args);
+        ApplicationContext context=SpringApplication
+                .run(EmployeepayrollappApplication.class,args);
+       log.info("Employee Payroll App Started in {} Environment",context.getEnvironment().getProperty("environment"));
 
     }
-
-
-        log.info("Employee Payroll App Started");
-    }
-
 }
