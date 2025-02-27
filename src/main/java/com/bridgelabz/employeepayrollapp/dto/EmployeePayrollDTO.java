@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 
 public class EmployeePayrollDTO {
-    @NotEmpty(message="Employee name cannot be null")
+    @NotEmpty
     @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Employee name Invalid")
     private String name;
 
