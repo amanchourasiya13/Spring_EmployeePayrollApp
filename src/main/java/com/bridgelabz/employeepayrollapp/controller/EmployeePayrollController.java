@@ -13,10 +13,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/employees")
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> UC5
 
 class EmployeePayrollController {
     @Autowired
@@ -46,7 +42,7 @@ class EmployeePayrollController {
         empData=employeePayrollService.createEmployeePayrollData(employeePayrollDTO);
         ResponseDTO responseDto = new ResponseDTO("Create Employee Payroll  Data Successfully",empData);
         return new ResponseEntity<ResponseDTO>(responseDto, HttpStatus.OK);
-=======
+
 public class EmployeePayrollController {
     @GetMapping("/test")
     public String testAPI() {
@@ -66,18 +62,18 @@ public class EmployeePayrollController {
     @PostMapping()
     public String addEmployee() {
         return "Employee added!";
->>>>>>> UC2
+
     }
 
     // PUT request - updating employee data
     @PutMapping("/update/{empId}")
     public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("empId")int empId,@RequestBody EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData empData = null;
-<<<<<<< HEAD
+
         empData =employeePayrollService.updateEmployeePayrollData(employeePayrollDTO);
-=======
+
         empData =employeePayrollService.updateEmployeePayrollData(empId,employeePayrollDTO);
->>>>>>> UC5
+
         ResponseDTO responseDto = new ResponseDTO("Updated  Employee Payroll  Data Successfully", empData);
         return new ResponseEntity<ResponseDTO>(responseDto, HttpStatus.OK);
     }
