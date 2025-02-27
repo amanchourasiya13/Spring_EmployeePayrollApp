@@ -13,10 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/employees")
-<<<<<<< HEAD
-=======
 
->>>>>>> 0feff3ae3c24e9c76ed975d8e5270b807f3dd1a0
+
 public class EmployeePayrollController {
     @Autowired
     private IEmployeePayrollService employeePayrollService;
@@ -45,7 +43,7 @@ public class EmployeePayrollController {
         empData=employeePayrollService.createEmployeePayrollData(employeePayrollDTO);
         ResponseDTO responseDto = new ResponseDTO("Create Employee Payroll  Data Successfully",empData);
         return new ResponseEntity<ResponseDTO>(responseDto, HttpStatus.OK);
-<<<<<<< HEAD
+
     }
 
     // PUT request - updating employee data
@@ -56,8 +54,7 @@ public class EmployeePayrollController {
         ResponseDTO responseDto = new ResponseDTO("Updated  Employee Payroll  Data Successfully", empData);
         return new ResponseEntity<ResponseDTO>(responseDto, HttpStatus.OK);
     }
-=======
->>>>>>> 0feff3ae3c24e9c76ed975d8e5270b807f3dd1a0
+
 
     // DELETE request - Removing employee
     @DeleteMapping("/delete/{id}")
