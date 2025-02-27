@@ -1,7 +1,7 @@
 package com.bridgelabz.employeepayrollapp.dto;
 
 
-import lombok.Da
+import lombok.Data;
 
 public @Data class ResponseDTO {
     private String message;
